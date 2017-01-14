@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calc</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		:root {
+			--main-side-width: 120px;	
+		}
+		.left {
+			width: var(--main-side-width);
+			background-color: pink;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		.main {
+			background-color: orange;
+			width: calc(100% - var(--main-side-width) * 2);
+			margin-left: var(--main-side-width);
+		}
+		.right {
+			width: var(--main-side-width);
+			background-color: salmon;
+			position: fixed;
+			top: 0;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="left">left</div>
+	<div class="main">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae accusamus laudantium animi aut debitis ducimus in numquam unde, facere libero voluptatum amet repellendus inventore quam nesciunt nemo. Accusamus nam, vero.
+	</div>
+	<div class="right">right</div>
+</body>
+</html>

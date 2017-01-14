@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calc</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		:root {
+			--main-side-width: 120px;	
+		}
+		.left {
+			width: var(--main-side-width);
+			background-color: pink;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		.main {
+			background-color: salmon;
+			width: calc(100% - var(--main-side-width));
+			margin-left: var(--main-side-width);
+		}
+	</style>
+</head>
+<body>
+	<div class="left">left</div>
+	<div class="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit deleniti earum voluptas, magnam nemo architecto eaque cum sunt at quasi maiores provident nobis natus dolorum debitis laborum sapiente facere veritatis.</div>
+</body>
+</html>

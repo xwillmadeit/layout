@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>双飞翼</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		:root {
+			--main-side-width: 120px;
+		}
+		.main {
+			width: 100%;
+			float: left;
+		}
+		.main-container {
+			margin: 0 var(--main-side-width);
+			background-color: orange;
+		}
+		.left {
+			background-color: pink;
+			width: var(--main-side-width);
+			margin-left: -100%;
+			float: left;
+		}
+		.right {
+			background-color: salmon;
+			width: var(--main-side-width);
+			margin-left: -120px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<!-- 双飞翼的概念：
+		1. 中间栏先显示
+		2. 中间栏浮动，左右固定
+	 -->
+	<div class="main">
+		<div class="main-container">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste cum, molestiae quae, dolorum quas dolores, porro officia adipisci, quia accusantium quam dolorem nam. Modi labore nulla expedita nam molestiae repellat.
+		</div>
+	</div>
+	<div class="left">left</div>
+	<div class="right">right</div>
+</body>
+</html>

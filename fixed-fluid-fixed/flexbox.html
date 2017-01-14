@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flexbox</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			display: flex;
+		}
+		:root {
+			--main-side-width: 120px;
+		}
+		.left {
+			background-color: pink;
+			flex-basis: var(--main-side-width);
+		}
+		.main {
+			background-color: orange;
+			flex-grow: 1;
+		}
+		.right {
+			background-color: salmon;
+			flex-basis: var(--main-side-width);
+		}
+	</style>
+</head>
+<body>
+	<div class="left">left</div>
+	<div class="main">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, harum temporibus tenetur saepe dolorem hic odit deleniti nemo officiis illum dolore beatae nobis praesentium, autem mollitia earum nihil tempore odio!
+	</div>
+	<div class="right">right</div>
+</body>
+</html>

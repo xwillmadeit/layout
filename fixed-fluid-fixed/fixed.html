@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		:root {
+			--main-side-width: 120px;	
+		}
+		.left {
+			width: var(--main-side-width);
+			background-color: pink;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		.main {
+			background-color: orange;
+			margin: 0 var(--main-side-width);
+		}
+		.right {
+			width: var(--main-side-width);
+			background-color: salmon;
+			position: fixed;
+			top: 0;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="left">left</div>
+	<div class="main">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, laborum, culpa. Voluptates soluta quibusdam dolores blanditiis itaque porro dignissimos. Ratione perspiciatis, unde dolore dicta alias illo optio cum obcaecati doloribus.
+	</div>
+	<div class="right">right</div>
+</body>
+</html>
